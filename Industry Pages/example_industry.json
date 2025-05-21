@@ -1,0 +1,532 @@
+{
+  "id": "8b927cf2-6ec4-4c50-946c-47434725ca98",
+  "blueprint": "industry",
+  "title": "SaaS",
+  "author": "1d395ad6-6b04-48e1-8049-0b619192b83c",
+  "hero_title": "Email marketing that powers",
+  "hero_subtitle": "From onboarding to retention, SendX helps SaaS companies automate their customer journey with powerful workflows, integrations, and AI-driven campaigns.",
+  "hero_image": [
+    "ai-email-builder.png"
+  ],
+  "updated_by": "1d395ad6-6b04-48e1-8049-0b619192b83c",
+  "updated_at": 1747295207,
+  "industry_key_features_provider": "saas",
+  "features": [
+    {
+      "id": "maf2s3p4",
+      "title": "Seamless integrations with your SaaS stack",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Connect SendX with your existing tools. Our Stripe integration lets you trigger emails based on payment events, while integrations with Hubspot, Intercom, and more keep your data in sync."
+            }
+          ]
+        }
+      ],
+      "image": [
+        "ai-email-builder.png"
+      ],
+      "points": [
+        {
+          "id": "maf2sme2",
+          "point": "Stripe integration for payment-based triggers"
+        },
+        {
+          "id": "maf2spli",
+          "point": "Hubspot and CRM integrations"
+        },
+        {
+          "id": "maf2sss9",
+          "point": "Intercom for customer support alignment"
+        },
+        {
+          "id": "maf2svpi",
+          "point": "Zapier for unlimited connectivity"
+        }
+      ]
+    },
+    {
+      "id": "maf3n22y",
+      "title": "Seamless integrations with your SaaS stack",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Connect SendX with your existing tools. Our Stripe integration lets you trigger emails based on payment events, while integrations with Hubspot, Intercom, and more keep your data in sync."
+            }
+          ]
+        }
+      ],
+      "image": [
+        "ai-email-builder.png"
+      ],
+      "points": [
+        {
+          "id": "maf2sme2",
+          "point": "Stripe integration for payment-based triggers"
+        },
+        {
+          "id": "maf2spli",
+          "point": "Hubspot and CRM integrations"
+        },
+        {
+          "id": "maf2sss9",
+          "point": "Intercom for customer support alignment"
+        },
+        {
+          "id": "maf2svpi",
+          "point": "Zapier for unlimited connectivity"
+        }
+      ]
+    },
+    {
+      "id": "maf3n3bx",
+      "title": "Seamless integrations with your SaaS stack",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Connect SendX with your existing tools. Our Stripe integration lets you trigger emails based on payment events, while integrations with Hubspot, Intercom, and more keep your data in sync."
+            }
+          ]
+        }
+      ],
+      "image": [
+        "ai-email-builder.png"
+      ],
+      "points": [
+        {
+          "id": "maf2sme2",
+          "point": "Stripe integration for payment-based triggers"
+        },
+        {
+          "id": "maf2spli",
+          "point": "Hubspot and CRM integrations"
+        },
+        {
+          "id": "maf2sss9",
+          "point": "Intercom for customer support alignment"
+        },
+        {
+          "id": "maf2svpi",
+          "point": "Zapier for unlimited connectivity"
+        }
+      ]
+    },
+    {
+      "id": "maf3n5ke",
+      "title": "Seamless integrations with your SaaS stack",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Connect SendX with your existing tools. Our Stripe integration lets you trigger emails based on payment events, while integrations with Hubspot, Intercom, and more keep your data in sync."
+            }
+          ]
+        }
+      ],
+      "image": [
+        "ai-email-builder.png"
+      ],
+      "points": [
+        {
+          "id": "maf2sme2",
+          "point": "Stripe integration for payment-based triggers"
+        },
+        {
+          "id": "maf2spli",
+          "point": "Hubspot and CRM integrations"
+        },
+        {
+          "id": "maf2sss9",
+          "point": "Intercom for customer support alignment"
+        },
+        {
+          "id": "maf2svpi",
+          "point": "Zapier for unlimited connectivity"
+        }
+      ]
+    }
+  ],
+  "key_features_provider": "saas",
+  "key_features_title": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Why SaaS companies <highlight> choose SendX </highlight>"
+        }
+      ]
+    }
+  ],
+  "key_features_description": "Our platform is built to address the unique challenges of SaaS businesses, from customer acquisition to retention.",
+  "other_features_title": "SaaS-specific features",
+  "other_features_description": "Our latest update includes powerful new features designed specifically for SaaS companies.",
+  "key_features": [
+    {
+      "id": "maggmj2v",
+      "key_feature_title": "AMP Emails",
+      "key_feature_description": "Create powerful automation sequences for onboarding, nurturing, and retention without writing a single line of code. Our visual workflow builder makes it easy to design complex customer journeys.",
+      "key_features_subpoints": [
+        {
+          "id": "maggo1d6",
+          "key_feature_subpoint": "Drag-and-drop workflow builder"
+        },
+        {
+          "id": "maggo4vs",
+          "key_feature_subpoint": "Trigger-based automation"
+        },
+        {
+          "id": "maggo7rg",
+          "key_feature_subpoint": "Behavior-driven sequences"
+        },
+        {
+          "id": "maggob2r",
+          "key_feature_subpoint": "A/B testing at every step"
+        }
+      ],
+      "key_feature_image": [
+        "ai-email-builder.png"
+      ],
+      "key_feature_provider": "c73k5d9qp",
+      "key_feature_subpoints": [
+        {
+          "id": "maggzelp",
+          "key_feature_subpoint": "Drag-and-drop workflow builder"
+        },
+        {
+          "id": "maggzwlq",
+          "key_feature_subpoint": "Trigger-based automation"
+        },
+        {
+          "id": "maggzzii",
+          "key_feature_subpoint": "Behavior-driven sequences"
+        },
+        {
+          "id": "magh02q7",
+          "key_feature_subpoint": "A/B testing at every step"
+        }
+      ]
+    },
+    {
+      "id": "magh04ir",
+      "key_feature_title": "Visual workflows for the entire customer journey",
+      "key_feature_description": "Create powerful automation sequences for onboarding, nurturing, and retention without writing a single line of code. Our visual workflow builder makes it easy to design complex customer journeys.",
+      "key_features_subpoints": [
+        {
+          "id": "maggo1d6",
+          "key_feature_subpoint": "Drag-and-drop workflow builder"
+        },
+        {
+          "id": "maggo4vs",
+          "key_feature_subpoint": "Trigger-based automation"
+        },
+        {
+          "id": "maggo7rg",
+          "key_feature_subpoint": "Behavior-driven sequences"
+        },
+        {
+          "id": "maggob2r",
+          "key_feature_subpoint": "A/B testing at every step"
+        }
+      ],
+      "key_feature_image": [
+        "ai-email-builder.png"
+      ],
+      "key_feature_provider": "f0687b1b-7d72-4f3f-9ae7-1f9b42725b76",
+      "key_feature_subpoints": [
+        {
+          "id": "maggzelp",
+          "key_feature_subpoint": "Drag-and-drop workflow builder"
+        },
+        {
+          "id": "maggzwlq",
+          "key_feature_subpoint": "Trigger-based automation"
+        },
+        {
+          "id": "maggzzii",
+          "key_feature_subpoint": "Behavior-driven sequences"
+        },
+        {
+          "id": "magh02q7",
+          "key_feature_subpoint": "A/B testing at every step"
+        }
+      ]
+    },
+    {
+      "id": "magh064q",
+      "key_feature_title": "Visual workflows for the entire customer journey",
+      "key_feature_description": "Create powerful automation sequences for onboarding, nurturing, and retention without writing a single line of code. Our visual workflow builder makes it easy to design complex customer journeys.",
+      "key_features_subpoints": [
+        {
+          "id": "maggo1d6",
+          "key_feature_subpoint": "Drag-and-drop workflow builder"
+        },
+        {
+          "id": "maggo4vs",
+          "key_feature_subpoint": "Trigger-based automation"
+        },
+        {
+          "id": "maggo7rg",
+          "key_feature_subpoint": "Behavior-driven sequences"
+        },
+        {
+          "id": "maggob2r",
+          "key_feature_subpoint": "A/B testing at every step"
+        }
+      ],
+      "key_feature_image": [
+        "ai-email-builder.png"
+      ],
+      "key_feature_provider": "f0687b1b-7d72-4f3f-9ae7-1f9b42725b76",
+      "key_feature_subpoints": [
+        {
+          "id": "maggzelp",
+          "key_feature_subpoint": "Drag-and-drop workflow builder"
+        },
+        {
+          "id": "maggzwlq",
+          "key_feature_subpoint": "Trigger-based automation"
+        },
+        {
+          "id": "maggzzii",
+          "key_feature_subpoint": "Behavior-driven sequences"
+        },
+        {
+          "id": "magh02q7",
+          "key_feature_subpoint": "A/B testing at every step"
+        }
+      ]
+    },
+    {
+      "id": "magh07fj",
+      "key_feature_title": "Visual workflows for the entire customer journey",
+      "key_feature_description": "Create powerful automation sequences for onboarding, nurturing, and retention without writing a single line of code. Our visual workflow builder makes it easy to design complex customer journeys.",
+      "key_features_subpoints": [
+        {
+          "id": "maggo1d6",
+          "key_feature_subpoint": "Drag-and-drop workflow builder"
+        },
+        {
+          "id": "maggo4vs",
+          "key_feature_subpoint": "Trigger-based automation"
+        },
+        {
+          "id": "maggo7rg",
+          "key_feature_subpoint": "Behavior-driven sequences"
+        },
+        {
+          "id": "maggob2r",
+          "key_feature_subpoint": "A/B testing at every step"
+        }
+      ],
+      "key_feature_image": [
+        "ai-email-builder.png"
+      ],
+      "key_feature_provider": "f0687b1b-7d72-4f3f-9ae7-1f9b42725b76",
+      "key_feature_subpoints": [
+        {
+          "id": "maggzelp",
+          "key_feature_subpoint": "Drag-and-drop workflow builder"
+        },
+        {
+          "id": "maggzwlq",
+          "key_feature_subpoint": "Trigger-based automation"
+        },
+        {
+          "id": "maggzzii",
+          "key_feature_subpoint": "Behavior-driven sequences"
+        },
+        {
+          "id": "magh02q7",
+          "key_feature_subpoint": "A/B testing at every step"
+        }
+      ]
+    }
+  ],
+  "hero_highlight": "SaaS growth",
+  "key_metrics": [
+    {
+      "id": "makqan8i",
+      "key_metric_title": "Increase trial conversions",
+      "key_metric_description": "Average increase in trial-to-paid conversions with our automated onboarding sequences",
+      "key_metric_percentage": 47
+    },
+    {
+      "id": "makqaznw",
+      "key_metric_title": "Reduce customer churn",
+      "key_metric_description": "Average reduction in customer churn with our engagement and retention campaigns",
+      "key_metric_percentage": 32
+    },
+    {
+      "id": "makqb8ke",
+      "key_metric_title": "Boost feature adoption",
+      "key_metric_description": "Average increase in feature adoption with targeted feature announcement emails",
+      "key_metric_percentage": 58
+    }
+  ],
+  "industry_email_templates_title": "Ready-to-use SaaS email templates that",
+  "industry_email_templates_highlight": "actually convert",
+  "industry_email_templates_description": "Get started quickly with our professionally designed email templates specifically created for SaaS businesses.",
+  "industry_email_templates": [
+    {
+      "id": "makqmz1g",
+      "email_template_title": "Trial Onboarding Sequence",
+      "email_template_description": "Guide new users through your product's key features during their trial period",
+      "email_template_provider": "b1077976-96bc-48ca-a5e3-d6c618a4a411"
+    },
+    {
+      "id": "makqnce4",
+      "email_template_title": "Trial Onboarding Sequence",
+      "email_template_description": "Guide new users through your product's key features during their trial period",
+      "email_template_provider": "b1077976-96bc-48ca-a5e3-d6c618a4a411"
+    },
+    {
+      "id": "makqneeb",
+      "email_template_title": "Trial Onboarding Sequence",
+      "email_template_description": "Guide new users through your product's key features during their trial period",
+      "email_template_provider": "b1077976-96bc-48ca-a5e3-d6c618a4a411"
+    }
+  ],
+  "other_features_highlight": "just released",
+  "testimonial_provider": "industries::saas",
+  "testimonials": [
+    {
+      "id": "maks1cs8",
+      "reviewer_image": [
+        "confident-executive.png"
+      ],
+      "reviewer_name": "Sarah Johnson",
+      "reviewer_info": "Head of Growth, TechGrowth",
+      "review_content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "MailerX has transformed our onboarding process. Our trial-to-paid conversion rate has increased by 58% since implementing their automated sequences."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maks21yp",
+      "reviewer_image": [
+        "confident-executive.png"
+      ],
+      "reviewer_name": "Sarah Johnson",
+      "reviewer_info": "Head of Growth, TechGrowth",
+      "review_content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "MailerX has transformed our onboarding process. Our trial-to-paid conversion rate has increased by 58% since implementing their automated sequences."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "industry_testimonials_title": "What SaaS companies say about us",
+  "industry_testimonials_description": "Don't just take our word for it. Here's what other SaaS companies have to say about MailerX.",
+  "cta_title": "Ready to grow your SaaS business with emails that actually work?",
+  "cta_subtitle": "Join thousands of SaaS companies that are achieving remarkable results with MailerX's email marketing platform.",
+  "key_features_highlight": "choose SendX",
+  "case_study_image": [
+    "ai-email-builder.png"
+  ],
+  "case_study_title": "GrowthPilot",
+  "case_study_description": "How GrowthPilot increased trial conversions by 67% with emails that people actually opened",
+  "case_study_provider": "424f6f60-8c1b-4e9c-9cb5-6b9aaddfe709",
+  "case_study_conversion_increase": 67,
+  "case_study_roi": 5.2,
+  "industries_hero_title": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "marks": [
+            {
+              "type": "bold"
+            }
+          ],
+          "text": "Email marketing for SaaS that <highlight>drives growth</highlight>"
+        }
+      ]
+    }
+  ],
+  "industries_hero_subtitle": "Convert more trials, reduce churn, and increase customer lifetime value with MailerX's powerful email marketing platform designed specifically for SaaS businesses.",
+  "industry_hero_title": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Email marketing that <highlight> actually works </highlight> for every industry"
+        }
+      ]
+    }
+  ],
+  "industry_hero_subtitle": "No more inbox abyss. Discover how MailerX helps businesses across different industries achieve their marketing goals with email that gets delivered.",
+  "industry_key_highlights_title": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Grow your SaaS business with emails that <highlight> don't get ignored </highlight>"
+        }
+      ]
+    }
+  ],
+  "industry_key_highlights_description": "Convert more trials, reduce churn, and increase customer lifetime value with MailerX's powerful email marketing platform designed specifically for SaaS businesses.",
+  "industry_key_highlights_points": [
+    {
+      "id": "mam6dpha",
+      "industry_key_highlight_point": "Automated onboarding sequences that actually work"
+    },
+    {
+      "id": "mam6duj4",
+      "industry_key_highlight_point": "Behavior-triggered emails that don't feel creepy"
+    },
+    {
+      "id": "mam6dxu5",
+      "industry_key_highlight_point": "Feature announcement campaigns people actually read"
+    },
+    {
+      "id": "mam6e0o2",
+      "industry_key_highlight_point": "Churn prevention workflows that save customers"
+    },
+    {
+      "id": "mam6e3ow",
+      "industry_key_highlight_point": "Customer success stories that convert"
+    }
+  ],
+  "industry_key_highlights_image": [
+    "ai-email-builder.png"
+  ]
+}

@@ -1,0 +1,396 @@
+﻿SendX Platform: Comprehensive Feature Documentation for AI Understanding
+I. Introduction to SendX
+SendX is an email marketing platform designed to provide businesses and marketers with a suite of tools for managing email communications, automating marketing workflows, and engaging with their audience. The platform aims to simplify the complexities of email marketing through an intuitive interface while offering robust functionalities that cater to a range of user needs, from bloggers to B2B companies.1 This document provides a detailed exploration of SendX's features, core concepts, and Application Programming Interfaces (APIs), structured to facilitate understanding by an Artificial Intelligence system. The goal is to create a knowledge base that allows an AI to comprehend the capabilities, entities, and operational logic of the SendX platform.
+The initial user query indicated a need to understand all SendX features by exploring a Google Sheet and subsequent links. While direct access to the Google Sheet was not possible 2, this documentation synthesizes information from publicly available SendX resources, including its official website, help center, API documentation, and feature pages, to construct a comprehensive overview.
+II. Overview of SendX Core Platform Features (Based on G2 and Official Documentation)
+SendX's capabilities can be broadly categorized into Platform, Integration, Email Marketing, and Reporting & Analytics. These categories provide a high-level framework for understanding the diverse functionalities offered.
+A. Platform Features
+Platform-level features relate to the foundational aspects of user management, system performance, and internationalization.
+1. User, Role, and Access Management: SendX allows for the management of users, their roles, and access permissions. This feature enables administrators to grant or restrict access to specific data, features, or objects based on user identity, assigned roles, or group memberships.3 This is crucial for team collaboration and security, ensuring that users only have access to the functionalities relevant to their responsibilities. G2 reviews indicate a 79% satisfaction rate for this feature based on 11 reviews.3
+2. Internationalization: The platform supports internationalization, suggesting capabilities to cater to a global user base, potentially including multi-language support or region-specific functionalities. This was mentioned in 10 SendX reviews on G2, with an 87% satisfaction rate.3
+3. Performance and Reliability: SendX is rated for its performance and reliability, which are critical for ensuring consistent service availability and responsiveness, especially for time-sensitive email marketing activities. G2 reviews show an 86% satisfaction rate based on 12 reviews.3
+B. Integration Features
+Integration capabilities allow SendX to connect with other software and systems, enhancing its utility within a broader marketing technology stack.
+1. Data Import & Export Tools: SendX provides tools for importing and exporting data, which is essential for managing contact lists and migrating data between systems.3 This functionality supports adding contacts via CSV files 4 and exporting contacts from lists.4 G2 reviews indicate an 89% satisfaction rate based on 11 reviews.3
+2. Integration APIs: The platform offers Integration APIs, enabling programmatic interaction with SendX. This includes both Javascript and REST APIs for various integration needs.3 G2 reviews show an 83% satisfaction rate for APIs based on 10 reviews.3
+3. Breadth of Partner Applications: SendX supports integration with a range of partner applications, including CRMs, payment gateways, marketing automation tools, webinar software, and e-commerce platforms.3 It also connects to over 1000 apps via Zapier and supports Integromat.8 G2 reviews indicate a 75% satisfaction rate based on 10 reviews.3
+4. CRM Integration: SendX integrates with CRM software, providing context to mailing lists.3 Examples include Pipedrive and Intercom.8
+5. E-Commerce Integration: The platform integrates with e-commerce platforms, linking directly to online stores.3 Examples include WooCommerce, Shopify, and Samcart.8
+C. Email Marketing Features
+This is the core functional area of SendX, encompassing all aspects of creating, sending, and managing email communications.
+1. Email and Mobile Preview: SendX allows users to preview how emails will appear across major email providers and mobile devices (e.g., iOS, Android) to identify and resolve rendering issues before sending.3 This ensures a consistent and professional presentation to subscribers. G2 reviews indicate an 86% satisfaction rate based on 23 reviews.3
+2. Manage Email Lists: Comprehensive list management tools include importing and maintaining subscriber data, list segmentation, profile attribute management, and delivery status tracking. Subscribers can also self-manage their preferences.3 This is fundamental for organizing contacts and complying with subscriber preferences. G2 reviews show a 91% satisfaction rate based on 23 reviews.3
+3. High-Volume Sending: The platform is capable of sending thousands of unique, personalized emails per second, catering to users with large subscriber bases and demanding sending needs.3 G2 reviews indicate a 90% satisfaction rate based on 21 reviews.3
+4. Building and Personalizing Emails: SendX provides tools for building and personalizing emails, including a WYSIWYG drag-and-drop editor 5, pre-built templates 5, and personalization using merge tags or custom fields.4 G2 reviews show an 87% satisfaction rate based on 23 reviews.3
+5. Sending Outbound Emails: This encompasses the core function of dispatching email campaigns and newsletters.3 G2 reviews indicate a 92% satisfaction rate based on 23 reviews.3
+6. Manage Email Deliverability: SendX includes features and practices aimed at optimizing email deliverability, ensuring emails reach the inbox.3 This involves a proprietary deliverability engine that optimizes campaigns based on over 30 parameters.5 G2 reviews show an 86% satisfaction rate based on 23 reviews.3
+7. Automated Email Responses: The platform supports automated email responses, such as welcome emails or thank-you emails, triggered by subscriber actions.3 G2 reviews show a 92% satisfaction rate based on 21 reviews.3
+8. Multi-user Account: SendX enables multiple users to log in to the same account, facilitating team collaboration for marketing activities.3 G2 reviews indicate a 91% satisfaction rate based on 11 reviews.3
+D. Reporting & Analytics Features
+These features allow users to track and analyze the performance of their email marketing efforts.
+1. A/B Testing: SendX supports A/B testing for elements like subject lines and content (images, text) to optimize campaign performance.3 G2 reviews indicate a 79% satisfaction rate based on 20 reviews.3
+2. Basic Reporting: The platform offers basic reporting capabilities to track key email marketing metrics.3 More advanced reporting and analytics are also mentioned, providing detailed insights into subscriber behavior with campaigns and drip sequences.5
+The G2 review data provides a quantitative measure of user satisfaction with these features, but the true utility for an AI lies in understanding the specific functionalities and interdependencies, which will be detailed in subsequent sections.
+III. Key SendX Concepts and Features (Detailed)
+This section delves into the specific components and functionalities that constitute the SendX platform, providing the granular detail necessary for an AI to model its operations.
+A. Contacts
+Contacts are the central entity within SendX, representing individuals (customers, leads, subscribers) with whom users communicate.16
+1. Definition and Purpose: Each contact is primarily identified by an email address, which is a mandatory field.4 Beyond the email, SendX allows storage of standard attributes and custom data.
+2. Key Attributes/Fields: The SendX REST API documentation outlines several key attributes for a contact 16:
+   * Id: A unique identifier for the contact.
+   * FirstName: The first name of the contact.
+   * LastName: The last name of the contact.
+   * Email: The email address (mandatory).
+   * Company: The company associated with the contact.
+   * CustomFields: An object (map of custom field ID to string value) for storing additional, user-defined information (e.g., "Developer/Creator", "Birthday").16
+   * Unsubscribed: Boolean, indicates if the contact has opted out.
+   * Bounced: Boolean, indicates if emails to this contact have bounced.
+   * Spam: Boolean, indicates if the contact marked an email as spam.
+   * Created: Timestamp (Unix time format) of contact creation.
+   * Updated: Timestamp (Unix time format) of last contact update.
+   * Blocked: Boolean, indicates if the contact is blocked from receiving emails.
+   * Dropped: Boolean, indicates if emails to this contact were dropped.
+   * LTV: Integer, Lifetime Value of the contact.
+   * ContactSource: Integer, indicating the source of contact addition (e.g., FileImport, JSAPI, RESTAPI, Popup, Form).16
+   * LastTrackedIp: The last known IP address of the contact.
+   * Lists: Array of List IDs the contact belongs to.
+   * Tags: Array of Tag IDs assigned to the contact. The ability to store CustomFields is particularly important as it allows users to tailor the data model to their specific needs, enriching contact profiles for better segmentation and personalization.11
+3. Management Operations: Contacts can be added individually, imported via CSV files 4, or added programmatically via APIs.7 They can also be updated, deleted, and unsubscribed through API calls.16 Users can search for contacts by email or name.18
+B. Lists
+Lists are fundamental for organizing contacts into groups for targeted communication.4
+1. Definition and Purpose: Lists serve as containers for contacts, often used as the primary audience for email campaigns and newsletters.4
+2. Key Attributes/Fields (from REST API documentation 16):
+   * Id: Encrypted unique identifier for the list.
+   * Name: User-defined name of the list (e.g., "Website Users" 4).
+   * Type: Integer indicating opt-in type: 0 for Single Opt-In, 1 for Double Opt-In.16
+   * SendThankYouMail: Boolean, whether to send a thank-you email upon subscription.
+   * ThankYouFromName, ThankYouFromEmail, ThankYouMailSubject, ThankYouMailMessage, ThankYouSender: Fields related to the thank-you email content and sender.
+   * ConfirmFromName, ConfirmFromEmail, ConfirmMailSubject, ConfirmMailMessage: Fields for the confirmation email in a Double Opt-In process.
+   * ConfirmSuccessPage: URL for the success page after confirmation.
+   * Created, Updated: Timestamps for list creation and last update. The distinction between Single Opt-In (contacts added directly) and Double Opt-In (contacts must confirm via email) 16 is a critical aspect for list hygiene and compliance.
+3. Management Operations:
+   * Creation: Users can create lists directly from the dashboard 4 or via the API.16 The ListApi allows creating lists with a ListRequest object.19
+   * Retrieval: All lists or a specific list by ID can be fetched.16 getAllLists supports pagination (offset, limit) and search.19
+   * Updating and Deletion: Lists can be updated or deleted using their listId.16
+   * Contact Association: Contacts can be added to or imported into lists.4 Contacts can also be exported from a list.4
+C. Tags
+Tags provide a flexible way to categorize and organize contacts based on various attributes or behaviors.11
+1. Definition and Purpose: Tags are labels (e.g., "interested in product X", "attended webinar") applied to contacts. They enable more granular segmentation and targeting than lists alone.16 A contact can have multiple tags.16
+2. Usage:
+   * Tags are used to create powerful filters and segments for campaigns.16
+   * They play a crucial role in automation; for instance, contacts can be auto-tagged based on the pop-up they subscribed to, data they filled 6, emails they open, links they click, or pages they visit.20
+   * Automations can also add or remove tags based on contact activity or segment changes.6
+3. Management Operations (from REST API documentation 16):
+   * GET Get All Tags
+   * POST Create a Tag
+   * GET Get a Tag by ID
+   * PUT Update a Tag
+   * DELETE Delete a Tag Users can also manage tags through the UI, including importing contacts into a tag or deleting a tag with all its contacts.11 The system's ability to automatically tag subscribers based on their interactions (e.g., form submission, link clicks) is a powerful feature for dynamic audience management.5
+D. Segmentation
+Segmentation allows users to divide their audience into more precise groups based on shared characteristics or behaviors, enabling highly targeted messaging.5
+1. Definition and Purpose: Segments can be dynamic (updating automatically as contacts meet criteria) or static. They are used to target campaigns and trigger automations.5
+2. Criteria for Segmentation:
+   * SendX allows segmentation based on demography, subscriber behavior, subscriber geography, and over 25+ other parameters.6
+   * Criteria can include contact properties (e.g., Location 21), custom fields, tags, list membership, and engagement data (e.g., "not-opened emails in 3 months" 22).
+3. Creating Segments:
+   * Users can create segments via the UI (Audience > Segments).21
+   * Conditions can be combined using AND (all conditions must be met) or OR (any condition must be met) logic.21
+   * For each condition, a field, an operator (e.g., "is", "is not", "contains"), and a value are specified.21
+4. Usage in Campaigns and Automations:
+   * Segments are critical for sending relevant content that resonates with specific audience groups.16
+   * Automations can be triggered when a contact enters or leaves a segment.6 This allows for dynamic nurturing paths based on evolving customer profiles. The combination of lists, tags, and advanced segmentation criteria provides a robust framework for audience management. For an AI, understanding how these three concepts interrelate is key to grasping SendX's targeting capabilities. Lists offer broad grouping, tags provide flexible labeling, and segments enable rule-based dynamic grouping based on a wide array of data points.
+E. Email Campaigns
+Email campaigns are the primary mechanism for sending broadcast emails, such as newsletters or promotional offers, to selected audiences.4
+1. Definition and Types: Campaigns can be newsletters, promotional emails, etc..4 SendX supports sending unlimited email campaigns.5
+2. Creation Process (as per "Getting Started" guide 4):
+   * Sender Stage: Define Campaign Name, From Name, From Email Address.
+   * Templates Stage: Choose from existing custom templates or SendX's global template collection.
+   * Content Stage: Enter Subject, Body, and visual elements. Personalization and Emojis are supported. Elements like text, images, social links can be added via drag-and-drop.
+   * Recipients Stage: Select target audience from Lists, Tags, and Segments.
+   * Schedule Stage: Send immediately ("Send Now") or schedule for later. A crucial best practice highlighted is sending test emails before the actual campaign launch to ensure content renders correctly and personalization works as expected.4
+3. Key Campaign Features:
+   * 1-Click Resend To Unopeners: Allows resending a campaign to subscribers who didn't open the initial email, typically with a different subject line, to boost open rates by up to 50%.5 This feature directly addresses the challenge of initial non-engagement.
+   * Smart Email Campaigns (Opti-Send Technology): SendX's Opti-Send technology aims to optimize emails for opens, potentially doubling open rates by sending emails when subscribers are most likely to engage, based on past open behavior and other parameters.5
+   * Geo Send: Optimizes email sending times based on the recipient's geographical location, eliminating manual timezone adjustments.6 This, combined with Smart Send, ensures messages are delivered at opportune moments.
+   * Personalization: Utilize merge tags and custom fields to personalize email content.4
+   * A/B Testing: Test different subject lines, content, from names, or send dates to optimize performance.3
+4. Campaign API Resource Fields (from REST API documentation 16):
+   * Id: Campaign ID.
+   * name: Campaign name.
+   * trackReply: Boolean, if replies should be tracked.
+   * status: Integer (0: Draft, 1: Scheduled, 2: Sending, 3: Sent, 4: Quarantined).
+   * scheduleType: Integer (0: Schedule later, 1: Send Now, 2: Trigger via automation, 3: Recurring).
+   * scheduleCondition, timeCondition, timezone: Scheduling details.
+   * sendInContactsTimezone: Boolean.
+   * smartSend: Boolean.
+   * sender: Unique sender identifier.
+   * includedSegments, includedTags, includedLists: Arrays of IDs for targeting.
+   * excludedSegments, excludedTags,excludedLists`: Arrays of IDs for exclusion. The API provides comprehensive control over campaign creation and management, mirroring the UI functionalities and allowing for programmatic campaign orchestration.
+5. Campaign Management Operations (from REST API documentation 16):
+   * GET Get All Campaigns
+   * POST Create Campaign
+   * GET Get Campaign By Id
+   * PUT Edit Campaign
+   * DELETE Delete Campaign
+F. Email Drip Campaigns / Sequences
+Email Drip Campaigns (or Sequences) are automated series of emails sent to contacts over time, typically triggered by a specific action or event, to nurture leads or onboard new users.5
+1. Definition and Purpose: Drip campaigns automate communication, sending the right message at the right time to move subscribers through a customer journey.6 They are key for lead nurturing.5
+2. Triggers and Sequencing:
+   * Can be triggered by user activity (e.g., form submission, link click), or when a contact enters or leaves a segment.6
+   * Emails in a sequence are sent with specified delays (e.g., 2 days after the previous email).15
+   * Users can define the number of emails (typically 4-11) and spacing based on their strategy.15
+3. Functionality:
+   * Auto-tag subscribers based on their activity within the drip sequence.5
+   * Start, stop, or exclude contacts from sequences based on their actions.5
+   * Utilizes Geo Send and Smart Send for optimized delivery times.15
+   * Can embed videos within drip emails.5 The ability to dynamically manage a contact's progression through a drip sequence based on their real-time engagement is a hallmark of sophisticated email automation.
+G. Email Automation
+SendX provides a powerful rules-based interface for automating various email marketing tasks, putting marketing on autopilot.5
+1. Rule Builder: Utilizes an "If this, then that" (IFTTT) logic.5
+2. Triggers:
+   * Over 25+ built-in automation triggers are available.6
+   * Triggers can be based on user activity (e.g., email open, link click, page visit 20), contact data (e.g., data filled in a form 6), segment changes (contact entering/leaving a segment 6), or pop-up subscriptions.6
+3. Actions:
+   * Send an email campaign (e.g., limited discount offer).6
+   * Start or stop an email drip sequence (e.g., onboarding drip, nudge for upgrade drip).6
+   * Add or remove a tag associated with a contact.6
+   * Send automated thank-you emails or nurture emails.6
+4. Benefits: Higher ROI with segmented emails, increased revenue with transactional emails, timely customer reach, and engaged leads.6 Automation is included in all SendX plans.6 The automation engine is the conductor of many SendX features, linking lead capture, tagging, segmentation, and email sending into cohesive workflows.
+H. Lead Capture: Forms, Pop-ups, and Landing Pages
+SendX offers several tools to capture leads and grow email lists, which are integral to the start of the marketing funnel.
+1. Embedded Sign Up Forms:
+   * Creation: Created via "Forms + Embedded" > "New Embedded", choose a template, edit content.26
+   * Purpose: Embed directly into website pages to capture emails.5
+   * Customization: High-converting templates available; customizable with a design builder.26
+   * Automation: Can auto-tag subscribers, send thank-you emails, or add to drip sequences.18
+   * Integration: Easy integration with WordPress (via plugin) and Medium, or any website via JS script.18
+2. Email Pop Up Forms:
+   * Types: Exit intent, hello bars, welcome mats (full-page), scroll boxes, sliders.5
+   * Purpose: Capture leads by "popping up" on a page at opportune moments.27
+   * Configuration:
+      * Design: Pre-built themes, customizable (animation, position, post-subscribe experience).27
+      * Triggers: Entry/exit intent, time, scroll behavior, clicks.27
+      * Targeting: Page-level, path-level, device-specific (mobile/desktop).27
+   * Automation: Similar to embedded forms – auto-tagging, thank-you emails, drip sequence enrollment.5
+3. Email Marketing Landing Pages:
+   * Creation: "Forms + Landing Pages" > "New Landing Page", choose template, use drag & drop editor.5 No coding required.
+   * Purpose: Convert traffic (e.g., from PPC campaigns on Facebook/Google) into leads.5
+   * Features for Lead Capture/Conversion:
+      * Conversion Blocks: Countdown timers, modal popups, share buttons.5
+      * Custom Scripts: Integrate Google Analytics, HotJar, chat plugins.28
+      * Advanced Forms: Checkboxes, radio buttons, date fields, custom fields for more data capture.28
+      * Targeting/Tracking: Device-specific sections, analytics integration.28
+      * Automation: Auto-tag leads, trigger drip sequences.28 These lead capture tools are the entry points for many contacts into the SendX ecosystem, often initiating automated follow-up sequences.
+I. WYSIWYG Drag & Drop Email Editor
+SendX provides an intuitive editor for designing emails without requiring HTML knowledge.5
+1. Purpose: Enables marketers to create professional-looking and visually appealing email newsletters and campaigns with ease.5
+2. Key Capabilities:
+   * Drag & Drop Interface: Add and arrange content blocks (text, images, buttons, etc.) easily.6
+   * Pre-built Email Templates: Access to 50+ free, premium, responsive email templates for various use cases and industries.5 Users can also import their own HTML templates.10
+   * Personalization: Supports personalization features.5
+   * Content Elements: Countdown timers, images, buttons.12
+   * Stock Photos: Access to 500,000+ free royalty-free stock photos.5
+   * Instant Preview: Preview emails for mobile and desktop screens to ensure responsiveness.5 This editor democratizes email design, allowing users without technical coding skills to produce high-quality emails.
+J. Dedicated IP
+For users with high sending volumes and specific deliverability requirements, SendX offers dedicated IP addresses.5
+1. Purpose: Provides exclusive use of an IP address for sending emails, giving full control over sender reputation and deliverability, as opposed to shared IPs where reputation can be affected by other users.5
+2. Benefits:
+   * Control over Deliverability: Sender reputation is solely based on the user's sending practices.31
+   * Improved Sender Reputation: Helps maintain a healthy domain reputation, crucial for delivery to corporate domains or those requiring IP whitelisting.31
+3. Prerequisites/Considerations:
+   * Email Volume: Best for consistent high volumes (e.g., >200,000 emails/month or >100,000 emails/week).31
+   * Sending Consistency: Irregular sending patterns might be better suited for shared IPs to avoid IP reputation reset.31
+   * IP Warm-up: New dedicated IPs require a warm-up process (gradually increasing send volume) to build a positive reputation with ISPs.32 This is an advanced feature catering to users who need fine-grained control over their sending infrastructure.
+K. A/B Testing
+SendX allows users to conduct A/B tests (split tests) to optimize various elements of their email campaigns.3
+1. Methodology: Create two versions (A and B) of an email element, send each to a small, random subset of the list, analyze which performs better based on a defined metric (e.g., open rate), and then send the winning version to the rest of the list.13
+2. Testable Elements 3:
+   * Subject Lines (most common, impacts open rates)
+   * Email Content (text, images)
+   * Call-to-Action (CTA) (wording, design, placement, impacts click-through rates)
+   * From Names
+   * Send Dates/Times (impacts open rates)
+   * Email Format (text vs. graphic)
+   * Personalization Depth
+   * Emojis in subject lines
+3. Process in SendX:
+   * Easy setup of A/B tests for subject lines.13
+   * Real-time analytics to track performance (opens, clicks) of variants.13
+   * Automated optimization: SendX can automatically determine the winning subject line after a period and send the remainder of the campaign with that version.13
+4. Metrics: Primarily open rates (for subject lines, send times) and click-through rates (for CTAs, content).14 A/B testing is a cornerstone of data-driven email marketing, enabling continuous improvement of campaign effectiveness.
+L. Analytics & Reporting
+SendX provides tools to track and analyze the performance of email campaigns and automations.3
+1. Types of Reports/Data:
+   * Campaign Performance: Detailed reports on how subscribers are behaving on email campaigns and drip sequences.5
+   * Key Metrics: Open rates, click-through rates (CTRs), reply rates, bounce rates, deliverability rates.6
+   * The "Getting Started" guide mentions accessing reports for newsletters but doesn't detail specific metrics within that guide.4
+2. Analytical Tools:
+   * Click Heatmap for Email Campaigns: Provides a visual representation of where recipients are clicking within an email, highlighting "hot-spots" (frequently clicked areas) and "cold-spots".5 This helps understand CTA effectiveness and user engagement patterns visually.
+   * Basic Reporting: General reporting capabilities are available.3
+   * Advanced Reporting & Analytics: For deeper insights into subscriber behavior.5 The analytics dashboard provides access to these reports, enabling users to refine their email marketing strategy based on performance data.5
+M. User Roles & Teams
+SendX supports multi-user accounts and team management features, particularly beneficial for larger organizations or marketing agencies.3
+1. Functionality:
+   * Allows multiple users to log in to the same SendX account.3
+   * Grant access to select data, features, objects based on user roles (Admin, Manager, Author, Viewer) or groups.3
+   * Agencies can manage unlimited client accounts under a single SendX account using the "Teams" feature, with seamless switching between them.12 This feature facilitates collaboration and enables agencies to manage email marketing for multiple clients efficiently.
+IV. SendX APIs: Javascript and REST
+SendX provides APIs to enable programmatic interaction with its platform, allowing developers to extend its capabilities and integrate it with other systems.5
+A. Javascript API
+The Javascript API is designed for client-side integrations, primarily for connecting a website's front end with SendX.7
+1. Installation/Initialization: The Javascript API is typically installed by adding a JS snippet to the website.16
+2. Main Functions and Purpose 7:
+   * identify method: Used to add or update contact information. If a contact with the given identifier (usually email) doesn't exist, it's created; otherwise, existing contact details are updated. This method is used to attach data (like name, company, custom fields) to a visitor/contact.
+      * Typical Parameters: Contact email, first name, last name, company, and any custom field data.
+   * track method: Used to record events or actions performed by a contact (e.g., page view, button click, form submission). This can be used to add or remove tags from a contact or trigger automations.
+      * Typical Parameters: Event name, event properties.
+3. Use Cases:
+   * Adding/editing contacts from custom website forms directly into SendX.7
+   * Triggering emails or initiating drip sequences based on front-end user actions.7
+   * Adding tags to contacts based on their website behavior.7
+   * Updating custom fields for contacts.7 Detailed documentation for the Javascript API is available on the SendX help site.7
+B. REST API
+The REST API is designed for server-side integrations, allowing backend systems or databases to interact with SendX.7
+1. Base URL: The API endpoint is https://api.sendx.io/api/v1/rest.16
+2. Authentication:
+   * Uses API key-based authentication.16
+   * The API key must be included in all requests in a header: X-Team-ApiKey: YOUR_API_KEY.16
+   * API keys can be found in SendX settings under "Team Api Key".16
+   * All API requests must be made over HTTPS; HTTP calls will fail. Requests without authentication will also fail.16
+3. Request/Response Format:
+   * Accepts form-encoded request bodies.16
+   * Returns JSON-encoded responses.16
+   * Uses standard HTTP response codes (2xx for success, 4xx for client errors, etc.).16
+4. Rate Limiting/Bulk Updates: The SendX REST API does not support bulk updates; only one object can be worked on per request.16
+5. Key Resource Categories and Operations: The API is organized around REST principles with predictable resource-oriented URLs and standard HTTP verbs (GET, POST, PUT, DELETE).16
+   * Contact API (/contact) 16:
+      * POST /contact: Create a contact. Requires a ContactRequest object.
+      * GET /contact: Get all contacts (supports pagination with offset, limit, filtering by contactType, and search).
+      * GET /contact/{identifier}: Get a contact by ID or email.
+      * PUT /contact/{identifier}: Update a contact by ID or email. Requires a ContactRequest.
+      * DELETE /contact/{identifier}: Delete a contact by ID or email.
+      * POST /contact/unsubscribe/{identifier}: Unsubscribe a contact by ID or email.
+      * Contact Schema Fields: Id, FirstName, LastName, Email, Company, CustomFields, Unsubscribed, Bounced, Spam, Created, Updated, Blocked, Dropped, LTV, ContactSource, LastTrackedIp, Lists, Tags.16
+   * List API (/list) 16:
+      * POST /list: Create a list. Requires a ListRequest object.
+      * GET /list: Get all lists (supports offset, limit, search).
+      * GET /list/{listId}: Get a list by ID.
+      * PUT /list/{listId}: Update a list by ID. Requires a ListRequest.
+      * DELETE /list/{listId}: Delete a list by ID.
+      * List Schema Fields: Id, Name, Type (0: SingleOptIn, 1: DoubleOptIn), SendThankYouMail, ThankYouFromName, ThankYouFromEmail, ThankYouMailSubject, ThankYouMailMessage, ThankYouSender, ConfirmFromName, ConfirmFromEmail, ConfirmMailSubject, ConfirmMailMessage, ConfirmSuccessPage, Created, Updated.16
+   * Campaign API (/campaign) 16:
+      * GET Get All Campaigns
+      * POST Create Campaign
+      * GET Get Campaign By Id
+      * PUT Edit Campaign
+      * DELETE Delete Campaign
+      * Campaign Schema Fields: Id, name, trackReply, status, scheduleType, scheduleCondition, timeCondition, timezone, sendInContactsTimezone, smartSend, sender, includedSegments, includedTags, includedLists, excludedSegments, excludedTags, excludedLists.16
+   * Tags API (/tag) 16:
+      * GET Get All Tags
+      * POST Create a Tag
+      * GET Get a Tag by ID
+      * PUT Update a Tag
+      * DELETE Delete a Tag
+   * Event API (/event) 16:
+      * POST Push a custom event associated with a contact.
+      * GET Custom event postback url.
+      * POST Record a revenue event for a specific contact.
+      * GET Revenue event postback url.
+   * Custom Field API (/custom_field) 16:
+      * GET Get All Custom Fields
+      * POST Create Custom Field
+      * GET Get Custom Field (by ID)
+      * PUT Update Custom Field (by ID)
+      * DELETE Delete Custom Field (by ID) Custom fields are stored as a map of custom field Id to string value within the Contact object.16 The API allows management of the custom field definitions themselves.
+   * Sender API (/sender) 16:
+      * GET Get All Senders
+      * POST Create Sender
+   * Webhook API (/webhook) 16:
+      * GET Get All team Webhook
+      * POST Create TeamWebhook
+      * GET Get TeamWebhook (by ID)
+      * PUT Update Team Webhook (by ID)
+      * DELETE Delete Team Webhook (by ID)
+      * POST WEBHOOK SendX Webhook Object (likely for receiving webhook payloads from SendX).
+   * Reports API (/reports) 16:
+      * GET Get CampaignReport Data
+6. SDKs: SendX provides official SDKs in various languages like Python, Java, Ruby, NodeJS, PHP, Golang, and Javascript to simplify REST API integration.7
+7. API Playground: An API playground is available for developers to experiment with REST API endpoints.7
+The availability of both client-side (Javascript) and server-side (REST) APIs, along with SDKs, provides comprehensive options for integrating SendX into various application architectures and automating marketing workflows.
+V. SendPost: A Related Email Delivery Service
+SendX is part of SendWorks, which also offers SendPost.1 SendPost appears to be a service focused on the technical aspects of email delivery, potentially serving as an underlying infrastructure or a complementary service for transactional and high-volume email sending.
+1. Purpose: SendPost is described as an email API and SMTP Relay service built for developers, bulk senders, e-commerce, and ESPs, focusing on reliable email delivery and "kickass inboxing".29
+2. Key Features 29:
+   * Email API & SMTP Relay: Offers integration via API SDKs or SMTP relay.
+   * Personalization at Scale: Supports custom fields and an if/else templating engine.
+   * Analytics: Detailed analytics on email performance (deliverability, bounce, open, click rates) via API or webhooks, at sub-account, IP, and group levels.
+   * AMP Email Support: Enables interactive emails.
+   * Sub-Accounts & Groups: For segregating email sending and detailed analytics.
+   * IP Management: Shared and dedicated IPs, auto IP warmup.
+   * Validation API: For cleaning email lists (removing hard bounces, spam traps, etc.).
+   * Alerts & Notifications: For deliverability issues or increased bounce rates.
+   * Rate Limiting, Throttling & Routing: Advanced controls for email sending.
+   * Webhooks: For event notifications.
+   * Deliverability CRM: Automated incident creation for deliverability issues.
+3. Supported Languages for API SDKs: NodeJS, PHP, Python, Ruby, Java, C#, Golang, Rust, and more (14+ languages cited).29
+4. Deliverability Tools: Supports SPF, DKIM, DMARC, and TRACK records for domain authentication. Offers shared and dedicated IPs, auto IP warmup, detailed SMTP stats, and smart alerts on deliverability issues.29
+The feature set of SendPost, with its emphasis on infrastructure-level controls like IP management, SMTP relay, sub-account segregation for different sending streams, rate limiting, and a validation API, points towards a service specializing in the technical delivery of emails, particularly suited for transactional messages and high-volume senders. This contrasts with SendX's primary focus on marketing campaign creation, automation, and list management tools like drag-and-drop editors and pop-up forms. It is plausible that SendX and SendPost are complementary offerings, where SendX might leverage SendPost's robust delivery infrastructure, or users might employ SendPost for specific transactional email needs alongside SendX for their broader marketing campaigns. An AI should recognize this potential synergy and the distinct but related roles of these two services under the SendWorks umbrella.
+VI. Conclusion: Synthesizing SendX for AI Comprehension
+SendX emerges as a multifaceted email marketing platform engineered to support the complete lifecycle of email marketing activities. Its architecture is built around core entities such as Contacts, Lists, Tags, and Segments, which are manipulated and leveraged through a rich set of features including Campaign management, Drip Sequences, advanced Automation, versatile Lead Capture tools, and robust Analytics.
+For an Artificial Intelligence system to effectively model and understand SendX, the following key entities and their interrelationships are paramount:
+* Contacts: The foundational entity. Each Contact possesses inherent properties (e.g., Email, FirstName) and can be enriched with user-defined CustomFields. Contacts are the recipients of all communications and the subjects of tracking and automation. A Contact can be a member of multiple Lists and can be assigned multiple Tags. Their behavior (e.g., email opens, link clicks, website activity, form submissions) is a primary driver for Automations and Segmentation.
+* Lists: Collections of Contacts, serving as primary organizational units. Lists are often the direct targets for Campaigns (especially newsletters). They can be configured for single or double opt-in, impacting how contacts are added and confirmed.
+* Tags: Flexible labels applied to Contacts for granular categorization that often transcends List boundaries. Tags are instrumental in Segmentation and are frequently manipulated (added/removed) by Automations based on Contact behavior or other criteria.
+* Segments: Dynamic or static groupings of Contacts defined by a wide array of criteria, including Contact properties, CustomFields, Tag assignments, List membership, and behavioral data. Segments are crucial for precise targeting in Campaigns and serve as triggers or conditions within Automations.
+* Campaigns: The mechanism for dispatching broadcast emails (e.g., newsletters, promotions). Campaigns target specific audiences defined by Lists, Tags, or Segments. They encompass content (designed with the WYSIWYG editor or HTML), sender details, and scheduling options (immediate, scheduled, or recurring). The performance of Campaigns is meticulously tracked via Analytics. Features like "Resend to Unopeners" and "Smart Send" are campaign-level optimizations.
+* Email Drip Sequences: A specialized form of Automation or Campaign involving a series of timed emails delivered to Contacts. These are typically triggered by a Contact's action (e.g., signing up via a Form) or their entry/exit from a Segment. Drip sequences are central to lead nurturing and automated onboarding.
+* Automations: Rule-based workflows (often described as "If-This-Then-That") that orchestrate actions based on predefined triggers. Triggers can be Contact behaviors, Segment changes, Tag applications, or other events. Actions include sending Campaigns, initiating or halting Drip Sequences, modifying Tags, or updating Contact data. Automations are the engine that connects many of SendX's features into dynamic marketing processes.
+* Forms, Pop-ups, Landing Pages: These are the primary lead capture instruments. When a Contact interacts with these tools (e.g., submits a form), they are typically added to one or more Lists, may have Tags applied, and can initiate Automations or Email Drip Sequences.
+* APIs (REST & Javascript): Programmatic interfaces that allow external systems to interact with and manage all the aforementioned entities and trigger their associated actions. The REST API provides comprehensive server-side control, while the Javascript API facilitates client-side integrations, particularly for tracking and contact identification on websites.
+No single SendX feature operates in isolation. There is a profound interconnectedness: Lead Capture tools feed Contacts into Lists and Automations. List management and Tagging provide the basis for Segmentation. Segments, Lists, and Tags are then used for targeting Campaigns and Drip Sequences. Automations dynamically respond to Contact interactions with these campaigns and other touchpoints. Analytics provide crucial feedback that informs the optimization of every preceding step, from lead capture strategies to campaign content and automation logic. This cyclical and integrated nature is fundamental to SendX's operational model and is a critical aspect for an AI to comprehend when reasoning about the platform's capabilities and potential applications. The relationship with SendPost further suggests a layered approach to email marketing and delivery, where SendX handles the marketing automation layer and SendPost potentially provides a robust underlying delivery infrastructure.
+VII. Downloadable Research Link
+A downloadable link for the research is not feasible in this text-based format. The information has been synthesized from the provided snippets. For direct access to the original source materials, please refer to the URLs cited throughout this document.3 Programmatic access to Google Sheets can be achieved by modifying the share URL to an export format like CSV, as detailed in sources like 41, or by using Google Sheets API with appropriate authentication for private sheets.42
+Works cited
+1. SendX Company Overview, Contact Details & Competitors - LeadIQ, accessed on May 20, 2025, https://leadiq.com/c/sendx/5a1dcee82300005c00d65bca
+2. accessed on January 1, 1970, https://docs.google.com/spreadsheets/d/1C-GtuBKZNHr0C62jDUDAdTKVGm3W8oGO/edit?usp=sharing&ouid=104857429277816399604&rtpof=true&sd=true
+3. SendX Features | G2, accessed on May 20, 2025, https://www.g2.com/products/sendx/features
+4. Getting Started - SendX, accessed on May 20, 2025, https://www.sendx.io/v2/support/sendx/getting-started-overview
+5. Email Marketing Features - SendX, accessed on May 20, 2025, https://www.sendx.io/features
+6. Email Automation - SendX, accessed on May 20, 2025, https://www.sendx.io/features/email-automation
+7. Email Marketing API - SendX, accessed on May 20, 2025, https://www.sendx.io/features/email-marketing-api
+8. Email Marketing Integrations - SendX, accessed on May 20, 2025, https://www.sendx.io/integrations
+9. WYSIWYG Email Editor | Drag and Drop Email Editor from SendX, accessed on May 20, 2025, https://www.sendx.io/features/wysiwyg-drag-and-drop-email-editor
+10. SendX, accessed on May 20, 2025, https://www.sendx.io/
+11. SendX - Help Center - SendWorks, accessed on May 20, 2025, https://www.sendworks.com/support/sendx
+12. Email Marketing Software for Agencies - SendX, accessed on May 20, 2025, https://www.sendx.io/email-marketing-for/email-marketing-for-agencies
+13. Crafting Irresistible Subject Lines with A/B Testing - SendX, accessed on May 20, 2025, https://www.sendx.io/blog/email-subject-line-ab-testing
+14. Email A/B Testing Explained - Examples, Ideas and Tips - SendX, accessed on May 20, 2025, https://www.sendx.io/blog/email-ab-test
+15. Email Drip Campaigns - SendX, accessed on May 20, 2025, https://www.sendx.io/features/email-drip-campaigns
+16. SendX REST API, accessed on May 20, 2025, https://docs.sendx.io/
+17. sendx-javascript-sdk/docs/ContactApi.md at main - GitHub, accessed on May 20, 2025, https://github.com/sendx/sendx-javascript-sdk/blob/main/docs/ContactApi.md
+18. Frequently Asked Questions - Email Marketing Help Center from SendX, accessed on May 20, 2025, https://www.sendx.io/faqs
+19. sendx-javascript-sdk/docs/ListApi.md at main - GitHub, accessed on May 20, 2025, https://github.com/sendx/sendx-javascript-sdk/blob/main/docs/ListApi.md
+20. Email Marketing Software For Crypto & Blockchain - SendX, accessed on May 20, 2025, https://www.sendx.io/email-marketing-for/cryptocurrency-blockchain
+21. Create Your First Segment - SendWorks, accessed on May 20, 2025, https://www.sendworks.com/support/sendx/create-your-first-segment
+22. The Ultimate Email List Management Guide For Small & Medium ..., accessed on May 20, 2025, https://www.sendx.io/resources/the-ultimate-email-list-management-guide-for-small-medium-businesses
+23. What Is An Email Nurture Campaign, And How To Run A Successful One? - SendX, accessed on May 20, 2025, https://www.sendx.io/blog/how-to-run-an-email-nurture-campaign
+24. Email Campaign: Send Unlimited Emails with SendX, accessed on May 20, 2025, https://www.sendx.io/features/email-campaign
+25. Resend to Unopened - SendX, accessed on May 20, 2025, https://www.sendx.io/features/resend-to-unopened
+26. Embedded Email Sign Up Forms - SendX, accessed on May 20, 2025, https://www.sendx.io/features/email-forms
+27. Email Pop Up Forms that Convert - SendX, accessed on May 20, 2025, https://www.sendx.io/features/email-popups
+28. Email Marketing Landing Pages that convert - SendX, accessed on May 20, 2025, https://www.sendx.io/features/email-marketing-landing-page
+29. Email API for Developers - SendX, accessed on May 20, 2025, https://www.sendx.io/sendpost/solution/email-api-for-developers/
+30. Send Email Newsletters with SendX, accessed on May 20, 2025, https://www.sendx.io/email-marketing/send-email-newsletters
+31. Email Marketing with Dedicated IP - SendX, accessed on May 20, 2025, https://www.sendx.io/features/dedicated-ip
+32. The Complete Guide to Email Deliverability - SendX, accessed on May 20, 2025, https://www.sendx.io/sendpost/the-complete-guide-to-email-deliverability
+33. Guide to Bulk Email Blasts (Best Practices That Work in 2024) - SendX, accessed on May 20, 2025, https://www.sendx.io/blog/bulk-email-blast
+34. Email Heatmaps: Visualize Data with SendX, accessed on May 20, 2025, https://www.sendx.io/features/email-heatmaps
+35. Mailchimp Pricing: Pricing plans, billing, credits, and more [2024] - SendX, accessed on May 20, 2025, https://www.sendx.io/resources/mailchimp-pricing
+36. Javascript API - SendWorks, accessed on May 20, 2025, https://www.sendx.io/help/javascript-api/
+37. SendX REST API SDK's, accessed on May 20, 2025, https://www.sendx.io/help/rest-api/
+38. Email Marketing Help Center from SendX | email list management, accessed on May 20, 2025, https://www.sendx.io/help/tag/email-list-management
+39. Email API & SMTP Relay — SendPost - SendX, accessed on May 20, 2025, https://www.sendx.io/sendpost/feature/email-api/
+40. The Complete Guide to Email Deliverability - SendX, accessed on May 20, 2025, https://sendx.io/sendpost/the-complete-guide-to-email-deliverability
+41. Public URL | WP Data Access, accessed on May 20, 2025, https://wpdataaccess.com/docs/remote-data-files/public-url/
+42. Reading and Writing a Private Google Sheet Programmatically - Atomic Spin, accessed on May 20, 2025, https://spin.atomicobject.com/reading-and-writing-a-private-google-sheet-programmatically/
+43. Top 10 Content Analysis Tools - SendX, accessed on May 20, 2025, https://www.sendx.io/blog/content-analysis-tools

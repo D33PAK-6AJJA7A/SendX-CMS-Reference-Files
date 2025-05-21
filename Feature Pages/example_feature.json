@@ -1,0 +1,247 @@
+{
+  "id": "8d58ad28-c5fc-43f1-aac6-bf2979de70be",
+  "blueprint": "feature",
+  "title": "Drag & Drop Editor",
+  "author": "1d395ad6-6b04-48e1-8049-0b619192b83c",
+  "feature_hero_title": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "AI Drag & Drop Editor that <highlight> actually works </highlight>"
+        }
+      ]
+    }
+  ],
+  "feature_hero_subtitle": "Create professional emails in minutes with our AI-powered drag & drop editor. No design skills required. Just your brilliant ideas.",
+  "feature_key_highlights_title": [
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Design emails <highlight> 10x faster </highlight> with AI assistance"
+        }
+      ]
+    }
+  ],
+  "feature_key_highlights_description": "Our AI-powered editor understands what you're trying to create and helps you build it in record time. Just describe what you want, and watch as the AI generates beautiful email sections you can customize.",
+  "feature_key_highlights": [
+    {
+      "id": "mapngmif",
+      "feature_key_highlight_title": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Create Emails <highlight> Instantly </highlight>"
+            }
+          ]
+        }
+      ],
+      "feature_key_highlight_description": "Generate entire email layouts with a simple text prompt. It's like having a sidekick that never sleeps.",
+      "feature_key_highlight_image": [
+        "home/placeholder.svg"
+      ],
+      "feature_key_highlight_points": [
+        {
+          "id": "mapnhi6c",
+          "feature_key_highlight_point": "No design degree required"
+        },
+        {
+          "id": "mapnhpr6",
+          "feature_key_highlight_point": "Optimized for mobile and desktop"
+        },
+        {
+          "id": "mapnhtx1",
+          "feature_key_highlight_point": "Instant previews available"
+        }
+      ]
+    },
+    {
+      "id": "mapni2l0",
+      "feature_key_highlight_title": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Time-Saving Automation"
+            }
+          ]
+        }
+      ],
+      "feature_key_highlight_description": "Let the AI handle the grunt work while you sip coffee. Edit less, achieve more with built-in automation.",
+      "feature_key_highlight_image": [
+        "home/placeholder.svg"
+      ],
+      "feature_key_highlight_points": [
+        {
+          "id": "mapnhi6c",
+          "feature_key_highlight_point": "Automate design improvements"
+        },
+        {
+          "id": "mapnhpr6",
+          "feature_key_highlight_point": "Focus on creativity while AI handles the rest"
+        },
+        {
+          "id": "mapnhtx1",
+          "feature_key_highlight_point": "Free up your time for strategy"
+        }
+      ]
+    },
+    {
+      "id": "mapni7lk",
+      "feature_key_highlight_title": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Friendly Interface"
+            }
+          ]
+        }
+      ],
+      "feature_key_highlight_description": "With its drag-and-drop ease and intuitive design, you'll never fear the 'send' button again.",
+      "feature_key_highlight_image": [
+        "home/placeholder.svg"
+      ],
+      "feature_key_highlight_points": [
+        {
+          "id": "mapnhi6c",
+          "feature_key_highlight_point": "Effortless navigation"
+        },
+        {
+          "id": "mapnhpr6",
+          "feature_key_highlight_point": "Clean and simple interface"
+        },
+        {
+          "id": "mapnhtx1",
+          "feature_key_highlight_point": "Guides you to the finish line"
+        }
+      ]
+    }
+  ],
+  "feature_how_it_works_title": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "How the AI editor <highlight> works </highlight>"
+        }
+      ]
+    }
+  ],
+  "feature_how_it_works_description": "Creating beautiful emails has never been easier. Our AI-powered editor takes the guesswork out of email design.",
+  "feature_how_it_works_sections": [
+    {
+      "id": "mapnih4x",
+      "feature_how_it_works_section_title": "Tell Us What You Need",
+      "feature_how_it_works_section_description": "Simply describe your dream email. We\u2019ll handle the rest."
+    },
+    {
+      "id": "mapnirct",
+      "feature_how_it_works_section_title": "AI Does the Heavy Lifting",
+      "feature_how_it_works_section_description": "Watch as the AI-whizz creates multiple tailor-made designs for you to choose from."
+    },
+    {
+      "id": "mapnj1ub",
+      "feature_how_it_works_section_title": "Custom Touches",
+      "feature_how_it_works_section_description": "Drag, drop, tweak! Customize as much or as little as you like."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "mapnjaai",
+      "reviewer_image": [
+        "home/placeholder.svg"
+      ],
+      "reviewer_name": "Sarah Johnson",
+      "reviewer_info": "Marketing Director, TechGrowth",
+      "review_content": "As someone with zero design skills, I was skeptical. But the AI suggestions are spot-on, and the drag-and-drop is truly intuitive. My emails look <highlight> professional now! </highlight>"
+    },
+    {
+      "id": "mapoubqh",
+      "reviewer_image": [
+        "home/placeholder.svg"
+      ],
+      "reviewer_name": "John Doe",
+      "reviewer_info": "Small Business Owner, FreshSnacks",
+      "review_content": "Finally, a tool that gets it. I can focus on business knowing my emails are in good hands. The AI\u2019s design changes were exactly what I needed!"
+    },
+    {
+      "id": "mapoloid",
+      "reviewer_image": [
+        "home/placeholder.svg"
+      ],
+      "reviewer_name": "Emily Tran",
+      "reviewer_info": "Lead Designer, CreativeCo",
+      "review_content": "It's like having an extra pair of hands that never get tired. Ideal for those urgent, last-minute campaigns!"
+    }
+  ],
+  "updated_by": "5a99e6b0-407b-43f3-9976-ed242aa2448e",
+  "updated_at": 1747820126,
+  "feature_testimonial_provider": "ai-editor",
+  "feature_faq_provider": "ai-editor",
+  "faqs_list": [
+    {
+      "id": "mapo9e83",
+      "question": "How does AMP work?",
+      "answer": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "AMP emails are interactive emails that allow users to engage with content directly within their inbox, enhancing user experience and driving conversions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mapo9vzi",
+      "question": "Can I import my existing email templates?",
+      "answer": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Yes! You can import HTML templates or choose from our library of 50+ pre-designed templates. Our AI will analyze your imported templates and suggest improvements for better engagement."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cta_title": "Ready to create emails that actually work?",
+  "cta_subtitle": "Join thousands of businesses that are saving time and getting better results with AI-powered email editor.",
+  "feature_all_features_title": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Discover <highlight> other features </highlight>"
+        }
+      ]
+    }
+  ]
+}
